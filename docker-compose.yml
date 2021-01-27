@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  react:
+    image: binary_viz_tree/reactjs:latest
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./react_code:/code
+    ports:
+      - "3000:3000"
